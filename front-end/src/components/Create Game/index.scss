@@ -1,0 +1,146 @@
+.column-wrapper {
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-60%);
+
+  width: 45vw;
+  height: 60vh;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  #game-create {
+    position: absolute;
+    height: 60vh;
+    left: 15%;
+  }
+
+  #pre-title {
+    width: 60%;
+    text-align: center;
+  }
+
+  #base-packs {
+    display: flex;
+    width: 60%;
+    max-height: 100%;
+
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 2vh;
+    border-radius: 2vh;
+
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #2d2d2d;
+  }
+}
+
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+
+  align-items: center;
+
+  top: 35%;
+  left: 0;
+
+  width: 80vw;
+  height: 60vh;
+  margin: 2vw;
+}
+
+#cr-cast-input, #cr-cast-submit {
+  height: 45% !important;
+  width: 20vw!important;
+}
+
+#cr-cast-input {
+  color: white!important;
+}
+
+#cr-cast-div {
+  label {
+    position: relative;
+    top: 6.5vh;
+    margin: .5vh;
+    max-width: 20vw;
+  }
+
+  h3 {
+    position: relative;
+    top: 5vh;
+  }
+}
+
+#create-game-top {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+i {
+  font-size: 1vw!important;
+}
+
+.hide-tip {
+  display: none;
+  font-size: 1vw;
+  padding: 1vh;
+  border-radius: 2vh;
+
+  a {
+    text-decoration: none;
+    color: #ff7300;
+  }
+}
+
+i:hover .hide-tip {
+  position: absolute;
+  display: block;
+  background: rgba(0,0,0,0.4);
+  max-height: 15vh;
+  width: 25vw;
+  top: 8%;
+}
+
+.settings {
+  position: fixed;
+  right: 1vw;
+
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 15vw;
+  top: 15vh;
+
+  justify-content: space-around;
+  align-items: flex-start;
+
+  padding: 0!important;
+
+  label {
+    margin: 2vh!important;
+  }
+
+  input:not([type='checkbox']) {
+    margin: 1vh;
+    height: 25%;
+
+    padding: 1vh;
+    width: 35%;
+
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: #2d2d2d;
+    border-radius: 1vh;
+    color: white!important;
+  }
+}

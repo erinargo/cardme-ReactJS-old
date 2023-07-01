@@ -1,0 +1,38 @@
+.game-options {
+  all: none;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+
+  form {
+    margin-right: 5vh;
+    width: 25%;
+  }
+
+  div {
+    width: 25%;
+  }
+}
+
+.public-game {
+  padding: .5vh;
+  border-radius: 1vh;
+
+  margin: .5vh;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #2d2d2d;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  max-height: 35%;
+}

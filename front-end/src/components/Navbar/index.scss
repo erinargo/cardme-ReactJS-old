@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: transparent;
+
+  margin: 0;
+  padding: 0;
+
+  z-index: 1;
+
+  #logo {
+    position: absolute;
+    left: 5vw;
+    top: 2.5vh;
+    text-decoration: none;
+    color: white;
+
+    font-size: 2.5vw;
+    font-weight: 999;
+
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .change-name {
+    position: absolute;
+    right: 5vw;
+    top: 2.5vh;
+
+    height: 100%;
+  }
+}
+
+input[type='text'] {
+  margin: 1vh;
+  height: 35%;
+
+  padding: 1vh;
+  width: 15vw;
+
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #2d2d2d;
+  border-radius: 1vh;
+  color: white!important;
+}
+
+input[type='submit'] {
+  margin: 1vh;
+  height: 50%;
+
+  padding: 1vh;
+  width: 10vw;
+  border: none;
+
+  color: #b7b7b7;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #2d2d2d;
+  border-radius: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+  *, * * {
+    all: unset;
+  }
+
+  #logo, title {
+    display: none!important;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 50% !important;
+      margin: 1vw;
+    }
+  }
+}
+
+#coffee {
+  position: fixed;
+  top: 1.5vh;
+  right: 1.5vw;
+
+  font-size: 1.5vw!important;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    color: #ff8352;
+  }
+}

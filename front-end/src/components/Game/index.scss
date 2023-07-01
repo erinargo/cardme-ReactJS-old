@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+a:not(#logo):not(.cr-add), button, [type='submit'] {
+  transition: 0.4s;
+  &:hover {
+    cursor: pointer!important;
+    background: #ff8352!important;
+  }
+}
+
+button {
+  margin: 1vh;
+  height: 50%;
+
+  padding: 1vh;
+  width: 10vw;
+  border: none;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #2d2d2d;
+  border-radius: 1vh;
+
+  position: relative;
+  top: 45vh;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+}
+
+#pregame-screen {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.wrapper-top {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  top: 20vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.black-card, .white-card {
+  position: absolute;
+  left: 2vw;
+
+  height: 90%;
+  width: 15vw;
+  background: black;
+  box-shadow: rgba(0, 0, 0, 0.46) 0px 1px 4px;
+
+  overflow: hidden;
+
+  border-radius: 2vh;
+  padding: 2vh;
+
+  p {
+    font-size: .8vw;
+    font-weight: 999;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.black-card {
+  height: 30vh;
+}
+
+.pick {
+  position: fixed;
+
+  left: 20vw;
+  top: 47vh;
+}
+
+.responses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 70vw;
+  left: 25vw;
+  bottom: 3vh;
+  height: 15vh;
+
+  position: fixed;
+}
+
+.white-card {
+  background: white;
+  color: black;
+  height: 100%;
+  width: 10vw;
+  margin: .5vh;
+  position: relative;
+}
+
+label.white-card {
+  &:hover {
+    transform: rotate(-15deg);
+    height: 20vh;
+    width: 15vw;
+    background: #ff8352;
+  }
+
+  input {
+     opacity: 0;
+   }
+}
+
+.daddy {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1vw;
+  font-weight: 999;
+}
+
+.xar {
+  position: absolute;
+  top: -8vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chat {
+  background: black;
+  position: fixed;
+  bottom: 3vh;
+  left: 1vh;
+  height: 40vh;
+  width: 43.5vh;
+  border-radius: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vh;
+
+  .chat-box {
+    height: 90%;
+    width: 100%;
+    background: #303030;
+    position: relative;
+    border-radius: 1vh;
+  }
+
+  form {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    margin-top: 1vh;
+  }
+
+  form input {
+    all: unset;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #2d2d2d;
+    border-radius: 1vh;
+  }
+}
+
+.confirm {
+  position: fixed;
+  left: 28vw;
+  bottom: 25vh;
+
+  background: #2d2d2d;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1vh;
+  padding: 1vh;
+}
+
+.points {
+  position: fixed;
+  right: -1vw;
+  top: 20vh;
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 1vw;
+  font-weight: 999;
+  text-wrap: normal;
+  width: 15vw;
+  height: 25vh;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 1vh;
+}
+
+label div {
+  height: 95%;
+  width: 95%;
+  padding: 2%;
+  font-size: .8vw;
+}
+
+.end {
+  position: fixed;
+  top: 12vh;
+  left: 5vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #2d2d2d;
+  border-radius: 1vh;
+  padding: 2vh;
+}
+
+.selected {
+  border: 1px solid black;
+  border-radius: 2vh;
+
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+  height: 45%;
+  width: 60%;
+
+  display: flex;
+  flex-direction: row;
+
+  .white-card {
+    font-size: .8vw;
+    height: 50%;
+    max-height: 90%;
+
+    &:hover {
+      width: 10vw!important;
+    }
+  }
+}
+
+.chat-box {
+  overflow: hidden;
+  overflow-y: auto;
+
+  p {
+    margin: 0.3vh;
+  }
+
+  div {
+    margin: 1vh;
+  }
+}
+
+.kick {
+  height: 2vh;
+  width: 3vh;
+  padding: 1vh;
+  border-radius: 1vh;
+}
