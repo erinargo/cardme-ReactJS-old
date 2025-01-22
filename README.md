@@ -14,7 +14,5 @@ the project itself will be launching regardless.
 To run, open a console in this directory and do ```node app.js```
 If you are linux you will need to run as root.
 
-# EDIT: As of 06/30/2023 11:15:08 PM I have decided this entire form of cardme will no longer be supported or updated. I am working on a new version of the app. Thank you for bearing with me.
-
 # TODO: (Ignore if you're not Erin)
 Comment. All. Of. This. Code.
